@@ -5,6 +5,7 @@
 package edu.ijse;
 
 import edu.ijse.view.BookView;
+import edu.ijse.view.BorrowingView;
 import edu.ijse.view.CategoryView;
 import edu.ijse.view.MemberView;
 
@@ -14,6 +15,6 @@ import edu.ijse.view.MemberView;
  */
 public class Main {
     public static void main(String[] args) {
-        new MemberView().setVisible(true);
+        new  BorrowingView().setVisible(true);
     }
 }

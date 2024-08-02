@@ -5,6 +5,7 @@
 package edu.ijse.dao;
 
 import edu.ijse.service.custom.impl.BookDaoImpl;
+import edu.ijse.service.custom.impl.BorrowingDaoImpl;
 import edu.ijse.service.custom.impl.CategoryDaoImpl;
 import edu.ijse.service.custom.impl.MemberDaoImpl;
 
@@ -35,6 +36,8 @@ public class DaoFactory {
                 return new CategoryDaoImpl();
             case MEMBER:
                 return new MemberDaoImpl();
+            case BORROWING:
+                return new BorrowingDaoImpl();
             default:
                 return null;
         }
@@ -42,6 +45,6 @@ public class DaoFactory {
     }
 
     public enum DaoTypes {
-        BOOK, CATEGORY, MEMBER
+        BOOK, CATEGORY, MEMBER,BORROWING
     }
 }
